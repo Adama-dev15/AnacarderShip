@@ -63,7 +63,7 @@ h6{
 }
 .logo{
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     color: rgb(161, 161, 0);
     letter-spacing: 0.3rem;
@@ -365,9 +365,9 @@ footer .container .footer_bas{
 
 /* Media Query */
 
-@media (max-width: 520px){
+@media (max-width: 380px){
     .container{
-        max-width: 520px;
+        max-width: 380px;
     }
     .call{
         display: none;
@@ -387,7 +387,7 @@ footer .container .footer_bas{
     .members_pictures .container .pictures_inner .card{
         width: 98%;
         display: flex;
-        gap: 5px;
+       
     }
     .members_pictures .container .pictures_inner .card .photo_membre img{
         width: 130px;
@@ -403,10 +403,14 @@ footer .container .footer_bas{
     /*swipers picteurs*/
     .images_swipers{
         margin-top: 550px; 
+        margin-right: 15px;
     }
     /*swipers picteurs*/
 
     /*service contact*/
+    .contact_service {
+        margin-right: 15px;
+    }
     .contact_service .bas_contact{
         display: grid;
         grid-template-columns: 1fr;
@@ -476,10 +480,39 @@ footer .container .footer_bas{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: 14px;
         width: 100%;
         margin-top: 10px;
     }
     /*footer*/
+}
+@media (max-width: 570px){
+    .container{
+        max-width: 570px;
+    }
+    .call{
+        display: none;
+    }
+    .text_choco,
+    .bas_text{
+        width: 100%;
+        padding-right: 10px;
+    }
+    /*Style members picteurs*/
+    .pictures_inner{
+        padding-right: 10px;
+    }
+    .members_pictures .container .pictures_inner .card{
+        display: flex;
+        height: 220px;
+        width: 100%;
+    }
+    .members_pictures .container .pictures_inner .card .photo_membre img{
+        width: 130px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px 0 0 10px;
+    }
 }
 @media (min-width: 640px){
     .container{
@@ -741,7 +774,7 @@ footer .container .footer_bas{
   }
  
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 380px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -756,7 +789,7 @@ footer .container .footer_bas{
     }
   }
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 380px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
